@@ -10,3 +10,29 @@
 
 # Example:
 
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        opened = []
+        stringList = list(s)
+        
+        for char in range(len(s)):
+            if stringList[char] == "(":
+                opened.append(char)
+            elif stringList[char] == ")":
+                if opened:
+                    opened.pop()
+                else:
+                    stringList[char] = ""
+                    
+        for index in opened:
+            stringList[index] = ""
+        
+        return "".join(stringList)
+
+
+
+# testcase
+
+string1 = "(asdn))"
+
+string2 = "))))))()"

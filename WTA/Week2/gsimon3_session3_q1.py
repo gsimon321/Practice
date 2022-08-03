@@ -48,3 +48,10 @@ class Solution:
                 tail.next = l2
             return dummy.next
                     
+
+
+# test cases:
+
+list1 = [[1,4,5],[3,4],[2]]
+
+list2 = [[],[2,3,4,234]]
