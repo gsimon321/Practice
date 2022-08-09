@@ -14,3 +14,8 @@ class Solution:
 
     dfs(root, 0)
     return ans
+
+# test cases
+
+[1,2,3]
+[1,3,1000,null,null,null,9000]
