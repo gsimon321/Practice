@@ -14,3 +14,8 @@ def canFinish(self, numCourses, prerequisites):
         for v in G:
             if v not in B and cycle(v, G, R, B): return False
         return True
+
+# test cases
+
+2
+[[11,0]]
